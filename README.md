@@ -24,14 +24,6 @@ GitHub: [meahdev/advanced_dio_with_clean_architecture](https://github.com/meahde
 - **Force 401 retry**: expires the products token and proves refresh/retry works
 - **Load from cache**: reads products from cache after the first remote load
 
-## Article Draft
-
-The Medium-ready article drafts are here:
-
-[docs/medium_article.md](docs/medium_article.md)
-
-[docs/medium_article.html](docs/medium_article.html)
-
 ## Verify
 
 ```sh

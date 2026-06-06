@@ -566,3 +566,11 @@ Keep:
 An advanced Dio setup is not about adding more code for its own sake. It is about making network behavior explicit, testable, and safe.
 
 With separate clients, token-aware interceptors, retry logic, logging, cache, and failure mapping, your Flutter app becomes much easier to reason about when API behavior gets complicated.
+
+## Conclusion
+
+This setup is useful when your Flutter app grows beyond one simple backend. You may not need separate Dio clients, separate tokens, retry handling, cache, and custom timeouts in every project. But when you integrate an independent third-party API, this structure gives you a clean way to handle that complexity without mixing network rules into widgets.
+
+The final architecture combines clean architecture, centralized `get_it` registration, Bloc state management, Dio interceptors, safe retry, cache, logging, and failure mapping. Each part has a clear responsibility, so the project stays easier to understand as it grows.
+
+GitHub Repository: [https://github.com/meahdev/advanced_dio_with_clean_architecture](https://github.com/meahdev/advanced_dio_with_clean_architecture)

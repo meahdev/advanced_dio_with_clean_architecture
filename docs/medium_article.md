@@ -4,6 +4,8 @@ Most Flutter apps start with one `Dio` instance and one access token. That works
 
 Not every app needs this setup. Many apps are perfectly fine with one backend and one access token. But sometimes you need to integrate a third-party API independently from your main backend. That third-party API may have its own base URL, access token, timeout requirements, refresh behavior, logging needs, and cache rules.
 
+When that situation happens, we should not handle each API directly inside widgets. That makes the app hard to maintain. Instead, we should centralize the network setup, keep feature logic separated, and let Bloc handle presentation state.
+
 GitHub: [https://github.com/meahdev/advanced_dio_with_clean_architecture](https://github.com/meahdev/advanced_dio_with_clean_architecture)
 
 ## Why Does This Matter?

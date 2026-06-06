@@ -22,7 +22,7 @@
 
   <p>Not every app needs this setup. Many apps are perfectly fine with one backend and one access token. But sometimes you need to integrate a third-party API independently from your main backend. That third-party API may have its own base URL, access token, timeout requirements, refresh behavior, logging needs, and cache rules.</p>
 
-  <p>That is when a simple single-Dio setup starts to become messy. If we put all of that inside widgets, the app becomes hard to maintain. A cleaner approach is to centralize the network setup, keep feature logic separated, and let Bloc handle presentation state.</p>
+  <p>When that situation happens, we should not handle each API directly inside widgets. That makes the app hard to maintain. Instead, we should centralize the network setup, keep feature logic separated, and let Bloc handle presentation state.</p>
 
   <p><strong>GitHub:</strong> <a href="https://github.com/meahdev/advanced_dio_with_clean_architecture">https://github.com/meahdev/advanced_dio_with_clean_architecture</a></p>
 
